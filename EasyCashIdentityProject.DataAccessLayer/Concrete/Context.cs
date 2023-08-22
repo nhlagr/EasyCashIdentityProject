@@ -1,4 +1,5 @@
-﻿using EasyCashIdentityProject.EntityLayer.Concrete;
+﻿using EasyCashIdentityProject.EntityLayer;
+using EasyCashIdentityProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace EasyCashIdentityProject.DataAccessLayer.Concrete
 {
-    public class Context:IdentityDbContext
+    public class Context:IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
