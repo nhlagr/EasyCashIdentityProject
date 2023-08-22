@@ -1,5 +1,4 @@
-﻿using EasyCashIdentityProject.EntityLayer;
-using EasyCashIdentityProject.EntityLayer.Concrete;
+﻿using EasyCashIdentityProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
